@@ -19,7 +19,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // document.addEventListener('touchstart', this.updateLastTouchTime, true);
+    document.addEventListener('touchstart', this.updateLastTouchTime, true);
     document.addEventListener('touchstart', this.disableHover, true);
     document.addEventListener('mousemove', this.enableHover, true);
   }
@@ -30,7 +30,7 @@ class App extends React.Component {
   }
 
   enableHover = () => { 
-    // if (new Date() - this.state.lastTouchTime < 500) return;
+    if (new Date() - this.state.lastTouchTime < 500) return;
     if (this.state.hasHover) return;
 
     this.setState({
@@ -44,11 +44,11 @@ class App extends React.Component {
       hasHover: false
     });
   }
-  // updateLastTouchTime = () => {
-  //   this.setState({
-  //     lastTouchTime: new Date()
-  //   });
-  // }
+  updateLastTouchTime = () => {
+    this.setState({
+      lastTouchTime: new Date()
+    });
+  }
 
 
   render() {
