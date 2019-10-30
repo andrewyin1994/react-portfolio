@@ -15,8 +15,8 @@
   },
   {
     "name": "5e Stuff",
-    "githubLink": "https://github.com/thinkful-ei-emu/andrewyin-capstone1-client",
-    "demoLink": "https://thawing-meadow-82803.herokuapp.com/characters",
+    "githubLink": "https://github.com/andrewyin1994/5e-creator-client",
+    "demoLink": "https://5e-stuff.netlify.com",
     "desc": "An entertainment web-app to help you manage your Dungeons and Dragons 5e characters.",
     "imgUrl": "5e-stuff-thumbnail.png",
     "techStack": [
